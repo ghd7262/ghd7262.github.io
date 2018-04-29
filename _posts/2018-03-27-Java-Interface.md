@@ -1,4 +1,9 @@
-## 인터페이스(Interface) Study
+---
+layout: post
+title: Interface Basics
+category: Java Study
+tags: Interface, Polymorphism
+---
 
 
 ### 인터페이스의 의미
