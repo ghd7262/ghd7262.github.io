@@ -1,6 +1,9 @@
- Site Info
+# Site Info
 title: Jae Park | Developer Log
 tagline: ''
+description: ''
+baseurl: ''
+url: 'http://krapeaj.github.io'
 logo: '/public/logo.png'
 
 # Site configurations
