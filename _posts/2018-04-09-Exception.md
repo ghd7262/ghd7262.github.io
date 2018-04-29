@@ -2,7 +2,7 @@
 layout: post
 title: Test Driven Development (TDD)
 category: Java Study
-tags: TDD
+tags: Java-Exception
 ---
 
 Java에서 Exception은 프로그램을 짜면서 프로그램 로직 특성의 제한이나 요구사항에 의해 허용되지 않는 상황이 발생했을 때 사용된다. Exception에는 두 가지 종류가 있다:

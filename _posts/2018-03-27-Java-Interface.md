@@ -2,7 +2,7 @@
 layout: post
 title: Interface Basics
 category: Java Study
-tags: Interface, Polymorphism
+tags: Java-Interface Java-Polymorphism
 ---
 
 
