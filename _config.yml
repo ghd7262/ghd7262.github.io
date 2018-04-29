@@ -1,5 +1,5 @@
 # Site Info
-title: Jae Park | Developer Log
+title: Jae Park | Developer's Log
 tagline: ''
 description: ''
 baseurl: ''
@@ -45,8 +45,7 @@ nav:
     - { Tags: '/blog/tags/' }
   About:
     - '/about/'
-  Github Project:
-    - 'http://krapeaj.github.io/'
+
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
