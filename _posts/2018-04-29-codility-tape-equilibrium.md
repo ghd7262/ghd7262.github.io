@@ -5,7 +5,7 @@ category: Algorithms
 tags: Tape_Equilibrium
 ---
 
-This problem caught me off guard. But in the process of actually solving the problem, I came across some unexpected difficulties.
+This problem kind of caught me off guard.
 
 First of all, I needed to make sure that the boundaries are not added/subtracted redundantly.
 
