@@ -24,8 +24,8 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: 재팍 | Jaehyun Park
-  description: A learning back-end Java developer, and a believer in the process.
+  name: 재팍 Jaehyun Park
+  description: 'A learning back-end Java developer. \n백앤드 자바를 공부하는 재팍 입니다.'
   # gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     # linkedin:  https://www.linkedin.com/in/
