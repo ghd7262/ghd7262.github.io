@@ -2,12 +2,15 @@
 layout: post
 title: Codility Lessons - Frog River 1
 category: Algorithms
-tags: Frog_River
+tags:
 ---
 
 To find out whether all positions were 'filled' for each K, a solution with O(n) time complexity (ie. without using doubly nested loops) required some way to keep track of:
-1. Whether *each* number had already appeared -- hence the boolean array to map position to boolean value.
-2. Whether *all* numbers had appeared -- hence the `requiredSum` to see if all positions are filled.
+
+1. Whether *each* number had already appeared 
+	- hence the boolean array to map position to boolean value.
+2. Whether *all* numbers had appeared
+	- hence the `requiredSum` to see if all positions are filled.
 
 ```java
 public int solution(int X, int[] A) {

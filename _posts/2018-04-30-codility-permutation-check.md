@@ -2,10 +2,10 @@
 layout: post
 title: Codility Lessons - Permutation Check
 category: Algorithms
-tags: Perm_Check
+tags:
 ---
 
-Pretty straight forward problem. Had to remember to take into account any element value that is greater than max the index value of the array.
+Had to remember to take into account any element value that is greater than max the index value of the array.
 
 ```java
 public int solution(int[] A) {

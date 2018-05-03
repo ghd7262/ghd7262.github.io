@@ -2,7 +2,7 @@
 layout: post
 title: Codility Lessons - Odd Occurrences In Array
 category: Algorithms
-tags: Odd_Occurrences_In_Array
+tags:
 ---
 
 First thought that came in my mind was to use a HashMap because counts of each element in the given array is required to find an element that appears an odd number of times.

@@ -2,10 +2,10 @@
 layout: post
 title: Codility Lessons - Missing Integer
 category: Algorithms
-tags: Missing_Integer
+tags:
 ---
 
-A relatively easy problem. Just had to use an array like a hashmap and find the first zero:
+I used an array like a hashmap, and loop through the array and find the first zero.
 
 ```java
 public int solution(int[] A) {

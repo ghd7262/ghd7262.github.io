@@ -2,14 +2,12 @@
 layout: post
 title: Codility Lessons - Tape Equilibrium
 category: Algorithms
-tags: Tape_Equilibrium
+tags:
 ---
 
-This problem kind of caught me off guard.
+I needed to make sure that the boundaries are not added/subtracted redundantly.
 
-First of all, I needed to make sure that the boundaries are not added/subtracted redundantly.
-
-And I had this mistaken thought that the candidate differences would be adjacent to each other. As a result, I checked for the 'mid-point' where the two candidates would be with the following condition: `leftSum > rightSum`. But this was obviously wrong considering the existence of negative numbers.
+And I had this mistaken thought that the candidate differences would be adjacent to each other. As a result, I checked for the 'mid-point' where the two candidates would be with the following condition: `leftSum > rightSum`. But this was obviously wrong considering the possible existence of negative numbers.
 
 So I learned two things:
 1. Be aware of boundary conditions.
