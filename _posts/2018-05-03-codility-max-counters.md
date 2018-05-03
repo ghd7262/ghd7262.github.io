@@ -6,6 +6,7 @@ tags:
 ---
 
 This problem helped me refine my knowledge of time complexity. Time complexity is not defined by the number of nested `while` or `for` keyword, but rather, it is defined by how many times the operation has to be repeated. For example, on my first try:
+
 ```java
 public int[] solution(int N, int[] A) {
 
@@ -40,9 +41,9 @@ public int[] solution(int N, int[] A) {
         return counter;
     }
 ```
-Here the time complexity is O(NM) because the loop has to perform the operation for the length of A (N), and for each loop, there are as many as `index`(M) number of times the loop has to repeat the operation. On code it seems as though the loop depth is one, the loop has to perform the operations for N*M number of times.
+Here the time complexity is O(NM) because the loop has to perform the operation for the length of A (N), and for each loop, there are as many as `index`(M) number of times the loop has to repeat the operation. On code it seems as though the loop depth is one. However, the program has to perform the operation for N*M number of times.
 
-Then, I thought too hard and confused myself with the idea that the max counter operation (A[K] == N + 1) before the very last one doesn't affect that outcome since every counters are just going to be set to the maximum value at the occurrence of the last max counter operation (*which is wrong*):
+Then, I thought too hard and confused myself with the idea that max counter operations (A[K] == N + 1) before the very last one don't affect the final outcome since every counter is just going to be set to the maximum value at the occurrence of the last max counter operation (*which is wrong*):
 
 ```java
 public int[] solution(int N, int[] A) {
@@ -73,7 +74,7 @@ public int[] solution(int N, int[] A) {
 
 
     if(maxCounterExists){
-        //overwrite
+        //overwrite counters
         for(int i = 0; i < counter.length; i++){
             counter[i] = max;
         }
@@ -89,9 +90,10 @@ public int[] solution(int N, int[] A) {
     return counter;
 }
 ```
-I realized this is wrong because it disregards the fact that previous max counter operation could affect what the maximum value at another occurrence will be. For example, given (N = 3, A = [1,1,1,4,3,3,4]) the above function will return [3,3,3]) when it should return (5,5,5).
+I realized this is wrong because it disregards the fact that previous max counter operations affect what the maximum value at another occurrence will be. For example, given (N = 3, A = [1,1,1,4,3,3,4]) the above function will return [3,3,3]) when it should return (5,5,5).
 
-My third try, which is a *valid solution*, involves always making sure each counter is up-to-date with the current max counter and updating the current max counter when a new max counter operation appears.
+My third try, which is a *valid solution*, involves making sure each counter is up-to-date with the current max counter, and it updates the current max counter when a new max counter operation appears.
+
 ```java
 public int[] solution(int N, int[] A) {
     int[] counter = new int[N];        
