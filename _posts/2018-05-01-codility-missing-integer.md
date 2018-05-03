@@ -5,7 +5,7 @@ category: Algorithms
 tags:
 ---
 
-I used an array like a hashmap, and loop through the array and find the first zero.
+I used an array to map numbers to their corresponding indexes (like a hashmap), iterated over the array and found the first zero.
 
 ```java
 public int solution(int[] A) {
