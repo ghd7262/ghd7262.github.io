@@ -5,7 +5,7 @@ category: Algorithms
 tags:
 ---
 
-In this problem, prefix sum is used to keep record of how many times A, C, G had appeared at each index since the start of the DNA sequence. Then, for each slice of the sequence, check whether A had appeared, then C, then G. If there was an occurrence(count > 0), assign the corresponding impact factor to a result array.
+In this problem, prefix sum is used to keep record of how many times A, C, G had appeared at each index since the start of the DNA sequence. Then, for each slice of the sequence, whether A, C, or G had appeared (count doesn't matter) is checked in that order. If there had been an occurrence(count > 0) of any nucleotide, the corresponding impact factor is assigned to the result array.
 
 ```java
 public int[] solution(String S, int[] P, int[] Q) {
