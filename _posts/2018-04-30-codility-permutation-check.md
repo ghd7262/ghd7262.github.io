@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[PermutationCheck](https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/)
+
 Had to remember to take into account any element value that is greater than max the index value of the array.
 
 ```java

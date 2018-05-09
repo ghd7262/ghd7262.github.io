@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[TapeEquilibrium](https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/)
+
 I needed to make sure that the boundaries are not added/subtracted redundantly.
 
 And I had this mistaken thought that the candidate differences would be adjacent to each other. As a result, I checked for the 'mid-point' where the two candidates would be with the following condition: `leftSum > rightSum`. But this was obviously wrong considering the possible existence of negative numbers.

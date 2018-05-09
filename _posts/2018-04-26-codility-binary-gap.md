@@ -5,7 +5,9 @@ category: Algorithms
 tags:
 ---
 
-Simple problem in which I just loop through the character array and count the maximun number of zeros.
+[Codility Lessons - BinaryGap](https://app.codility.com/programmers/lessons/1-iterations/binary_gap/)
+
+I looped through the character array and counted the maximun number of zeros.
 
 ```java
 class Solution {

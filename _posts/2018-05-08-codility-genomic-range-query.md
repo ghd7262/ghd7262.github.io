@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[GenomicRangeQuery](https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/)
+
 In this problem, prefix sum is used to keep record of how many times A, C, G had appeared at each index since the start of the DNA sequence. Then, for each slice of the sequence, whether A, C, or G had appeared (count doesn't matter) is checked in that order. If there had been an occurrence(count > 0) of any nucleotide, the corresponding impact factor is assigned to the result array.
 
 ```java

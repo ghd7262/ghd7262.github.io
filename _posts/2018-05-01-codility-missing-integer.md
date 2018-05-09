@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[MissingInteger](https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/)
+
 I used an array to map numbers to their corresponding indexes (like a hashmap), iterated over the array and found the first zero.
 
 ```java

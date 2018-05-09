@@ -5,7 +5,9 @@ category: Algorithms
 tags:
 ---
 
-I figured that the given array contains numbers that matched their indexes (sort of like a hash map) except for the one element that is missing. So, all I have to do is to create a new array of length N + 1 and loop around the given array and assign each numbers to their corresponding(`number - 1`) indexes. Then, go through new array to find the index number in which `newArray[index] == 0` and return what number is missing ie.`index + 1`.
+[PermutationsMissingElement](https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/)
+
+I figured that the given array contains numbers that match their indexes (sort of like a hash map) except for the one element that is missing. So, all I have to do is to create a new array of length N + 1 and loop around the given array and assign each numbers to their corresponding(`number - 1`) indexes. Then, go through new array to find the index number in which `newArray[index] == 0` and return what number is missing ie.`index + 1`.
 
 ```java
 public int solution(int[] A) {

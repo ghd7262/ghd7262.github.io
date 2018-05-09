@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[CountDivisions](https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/)
+
 The first thought that came to mind was to divide the end points A and B by K, then subtract the two to exclude the number divisions before A, and it worked out. Just had to remember to count the division `A/K` if it is divisible by K.
 
 ```java

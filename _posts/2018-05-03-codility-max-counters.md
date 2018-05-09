@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[MaxCounters](https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/)
+
 This problem helped me refine my knowledge of time complexity. Time complexity is not defined by the number of nested `while` or `for` keyword, but rather, it is defined by how many times the operation has to be repeated. For example, on my first try:
 
 ```java

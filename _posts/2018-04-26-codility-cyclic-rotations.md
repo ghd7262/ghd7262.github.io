@@ -5,6 +5,8 @@ category: Algorithms
 tags:
 ---
 
+[Codility Lessons - CyclicRotation](https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/)
+
 My first approach was to do `newIndex = newIndex - size` in the if block. The lesson learned here is that simply subtracting (or adding) to an index is never a good idea. 
 
 In problems that involve some sort of cyclic mechanism such as this, cases for more than one cycle need to be accounted for. Instead of using subtraction/addition, use division(`/` `%`)/multiplication.

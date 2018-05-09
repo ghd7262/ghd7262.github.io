@@ -5,7 +5,9 @@ category: Algorithms
 tags:
 ---
 
-First thought that came in my mind was to use a HashMap because counts of each element in the given array is required to find an element that appears an odd number of times.
+[OddOccurrencesInArray](https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/)
+
+First thought that came in my mind was to use a hash map because the count of each element in the given array is required to find an element that appears for an odd number of times.
 
 
 ```java
