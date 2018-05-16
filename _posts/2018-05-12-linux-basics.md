@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux(OS) 기본 지식
-category: Study
+category: Linux
 tags: Linux Daemon Process Crontab
 ---
 

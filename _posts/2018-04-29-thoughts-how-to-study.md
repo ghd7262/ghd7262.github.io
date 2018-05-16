@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Weekly Log 3
-category: Weekly Logs
-tags: CodeSquad
+title: 공부 방법에 대한 생각
+category: Thoughts
+tags:
 ---
 
 #### Code Squad level 2 를 마치며.. 배움의 노하우와 공부 방법에 대한 고찰(?)

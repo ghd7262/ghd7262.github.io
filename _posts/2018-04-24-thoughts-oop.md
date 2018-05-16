@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Weekly Log 2
-category: Weekly Logs
+title: Object Oriented Programming and Design
+category: Thoughts
 tags: OOD OOP
 ---
 

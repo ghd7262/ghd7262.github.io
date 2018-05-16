@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Test Driven Development (TDD)
-category: Java Study
+category: Java
 tags: Java-Exception
 ---
 

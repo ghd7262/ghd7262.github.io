@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Weekly Log 1
-category: Weekly Logs
+title: 테스트 주도 개발 (TDD)에 대한 생각
+category: Thoughts
 tags: TDD
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java - General Rules for Logging using Logback/SLF4J
-category: Java Study
+category: Java
 tags: Logback SLF4J Logging
 ---
 
