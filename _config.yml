@@ -1,61 +1,19 @@
-# Site Info
-title: 'Jae Park | Developer Blog'
-tagline: "Jae Park's Developer blog | 재팍의 개발 기록 블로그"
-description: 'Back-end Java를 공부하는 재팍 입니다.'
-baseurl: ''
-url: 'http://krapeaj.github.io'
-logo: '/public/logo.png'
+# Site settings
+title: Nice Blog
+name: Nice Blog # your name
+email: youremail@example.com # your email address
+description: >
+    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
+baseurl: "/Nice_Blog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: # your Twitter username
+github_username: # your Github username
+disqus_username: # your disqus username
 
-# Site configurations
-gems:
-  - jekyll-paginate
+google-analytics: # add it if you have one
+
+skillstree: true # turn on or off the skills tree in about page
+
+# Build settings
+permalink: none
 markdown: kramdown
-kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
-sass:
-  style: compressed
-  sass_dir: _scss
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
-
-version: 1.0.0
-
-# About/contact
-author:
-  name: 재팍 Jaehyun Park
-  description: 'A learning back-end Java developer. 백앤드 자바를 공부하는 재팍 입니다.'
-  # gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
-  contact:
-    # linkedin:  https://www.linkedin.com/in/
-    github:    https://github.com/krapeaj
-    # facebook:  <hide>
-    # twitter:   https://twitter.com/
-    # weibo:     http://weibo.com/
-    email:     mailto:jaeepark@gmail.com
-
-# Navigation (2nd level links supported)
-nav:
-  Home:
-    - '/'
-  Blog:
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
-  About:
-    - '/about/'
-
-
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
-
-hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
-
-# Puglins
-# mathjax: true # whether support mathjax
-# google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-# disqus_short_name: 'your_short_name' # leave blank if you don't want disqus

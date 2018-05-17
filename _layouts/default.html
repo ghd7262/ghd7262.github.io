@@ -1,65 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
+  <head>
+      
   {% include head.html %}
 
-  <body class="theme-base-0g layout-reverse">
+  {% if site.google-analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
 
-    {% include sidebar.html %}
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
+  {% endif %}
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Jae Park's Developer Blog">
-              <img src="/public/logo.png" class="codinfox-logo" />
-            </a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-        <!-- <div class="codinfox-masthead-bg"></div> -->
-      </div>
+  </head>
 
-      <div class="container content">
+  <body>
+
+  {% include header.html %}
+
+  <div class="wrapper">
         {{ content }}
-      </div>
-    </div>
+  </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+</body>
 
-<!-- Disqus Embeded -->
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'yourname'; // required: replace example with your forum shortname
+<foot>
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
+    {% include footer.html %}
+    {% include foot.html %}
 
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
+</foot>
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
-
-  </body>
 </html>
