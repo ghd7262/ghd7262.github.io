@@ -4,7 +4,7 @@ name: Jae Park # your name
 email: jaeepark@gmail.com # your email address
 description: >
      자바 백앤드 개발을 공부하면서 배운점과 여러 생각을 기록하는 블로그 입니다.
-baseurl: "krapeaj.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: # your Twitter username
 github_username: krapeaj # your Github username
