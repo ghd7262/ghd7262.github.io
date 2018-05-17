@@ -7,16 +7,24 @@ tags: Logback SLF4J Logging
 
 ## Logging - Logback/SLF4J
 
-
-#### Logging의 중요성
+#### Logging의 중요성 - `System.out.println()`를 안쓰는 이유
 - 문제가 생겼을 때 어디서 문제가 발생하는지 알 수 있다
-- `System.out.println()`은 프로그램 성능 저하를 유발할 뿐만아니라 배포하기 전 개발 단계에서 코드에 적었던 `sout`을 일일이 다 찾아서 삭제 혹은 주석 처리해야 한다.
+- 실제로 시스템을 운영하게 되면 파일로 정리된다.
+  - `System.out.println()`로 로깅을 해서 파일로 저장하는 것은 성능상 엄청나게 안좋다 - HDD로 떨어지기 때문.
+  - 시간을 찍는 거 조차 새 객체를 생성하고 string concatenation을 해야한다.
+  - `System.out.println()`은 프로그램 성능 저하를 유발할 뿐만아니라 배포하기 전 개발 단계에서 코드에 적었던 `sout`을 일일이 다 찾아서 삭제 혹은 주석 처리해야 한다.
 
 #### Using Logback/SLF4J Logging Framework
-- Log4j 보다 성능이 좋고 제공하는 기능도 많음.
+
 - 네 개의 logging level이 있다: `TRACE < DEBUG < INFO < WARN < ERROR`
   - logging level이 낮을 수록 더 자세한 내용을 표시: INFO level이면 WARN과 ERROR의 내용을 포함.
-
+  - `sout`과 똑같이 hdd에 로그를 생성하지만 다른 로깅 레벨을 사용해서 개발 단계인지 운영 단계인지에 따라 맞는 로깅 가능.
+  - 특정 아이피로 로깅 파일을 다 보내서 로깅을 중앙적으로 관리하는 서버의 HDD로 저장 가능.
+- Log4j 보다 성능이 좋고 제공하는 기능도 많음.
+- SLF4j는 인터페이스이다.
+  - 여러 로깅 라이브러리 (Logback과 같은) 구현체를 사용할 수 있게 하는 창구 역할.
+  - 때문에 실제로는 SLF4J를 통해 Logback을 쓰는 것.
+- **`System.out.println()`는 절대 쓰지 말자.**
 ---
 
 다음은 [10 Tips for Proper Application Logging](https://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html) 에서 핵심 포인트를 요약한 내용:
