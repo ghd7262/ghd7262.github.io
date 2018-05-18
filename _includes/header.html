@@ -3,20 +3,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  
-<!--   <div class="wrapper"> -->
+  <div class="wrapper">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  </div>
+    
+  <div class="wrapper">
     <center>
         
 		<p><a class="link" href="{{ site.baseurl }}/archive/">Archive</a> |
 		<a class="link" href="{{ site.baseurl }}/category/">Category</a> | 
 		<a class="link" href="{{ site.baseurl }}/tags/">Tags</a> | 
-		<a class="link" href="{{ site.baseurl }}/about/">About</a> |
+		<a class="link" href="{{ site.baseurl }}/about/">About</a> 
 <!-- 		<a class="link" href="{{ site.baseurl }}/contact/">Contact</a> -->
         </p>
 
     </center>
-<!--   </div> -->
+  </div>
   
 </head>
