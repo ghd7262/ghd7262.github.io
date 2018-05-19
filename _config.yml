@@ -10,6 +10,15 @@ twitter_username: # your Twitter username
 github_username: krapeaj # your Github username
 disqus_username: # your disqus username
 
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/pages/:num/"
+
+exclude:
+  - README.markdown
+
 google-analytics: # add it if you have one
 
 skillstree: false # turn on or off the skills tree in about page
