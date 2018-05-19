@@ -13,8 +13,18 @@ disqus_username: # your disqus username
 plugins:
   - jekyll-paginate
 
-paginate: 5
-paginate_path: "/pages/:num/"
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+# paginate: 5
+# paginate_path: "/pages/:num/"
 
 exclude:
   - README.markdown
