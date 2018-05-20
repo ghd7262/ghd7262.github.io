@@ -25,6 +25,7 @@ tags: Logback SLF4J Logging
   - 여러 로깅 라이브러리 (Logback과 같은) 구현체를 사용할 수 있게 하는 창구 역할.
   - 때문에 실제로는 SLF4J를 통해 Logback을 쓰는 것.
 - **`System.out.println()`는 절대 쓰지 말자.**
+
 ---
 
 다음은 [10 Tips for Proper Application Logging](https://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html) 에서 핵심 포인트를 요약한 내용:
