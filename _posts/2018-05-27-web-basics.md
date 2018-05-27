@@ -73,7 +73,7 @@ Java Servlet은 JavaEE javax.servlet 패키지 안에 정의되어있는 인터�
 
 > **요약하자면, servlet의 역할은 요청을 받아서 해석하고, 해석된 데이터에 따라 적당한 리소스를 동적으로 선택해서 보내는 것이다.**
 
-Servlet을 implement하는 클래스를 직접 구현할 수도 있지만, 보통 Apache Tomcat과 같은 웹서버가 제공하는 구현체를 쓴다.
+Servlet을 implement하는 클래스를 직접 구현할 수도 있지만, Apache Tomcat과 같은 웹서버에서 제공하는 구현체와 Spring Framework 같은 웹 프레임워크가 제공하는 구현체를 쓴다.
 
 
 ## 정리 - HTTP 요청이 들어오면 Web Server는 어떻게 요청을 처리하는가?
