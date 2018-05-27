@@ -86,7 +86,7 @@ Servlet을 implement하는 클래스를 직접 구현할 수도 있지만, 보�
   - servlet은 컨테이너의 address space 안에 머물며 다른 HTTP 요청을 처리할 수 있다.
 5. Web Server가 HTTP response를 요청자에게 보낸다.
 
-![Overall Architecture](/assets/img/servlet-container-life-cycle)
+![Overall Architecture](/assets/img/servlet-container-life-cycle.jpg)
 
 
 
