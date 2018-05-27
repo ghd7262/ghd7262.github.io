@@ -36,14 +36,14 @@ TCP/IP
 
 웹서버란 HTTP에 따라 클라이언트로부터 요청을 받고 데이터를 보내는(응답)하는 프로그램일 뿐이다. HTML이나 이미지 등을 HTTP 규격에 맞게 request를 작성해서 보내는 역할을 한다.
 
-[Web Server](/assets/img/web-server.jpg)
+![Web Server](/assets/img/web-server.jpg)
 
 
 > Servlet Container? (aka Web Container)
 
 Web Container란 Web Server의 한 부분으로서, 서블릿의 인스턴스를 생성하여 lifecycle을 관리하며, HTTP 요청이 들어오면 servlet 객체의 service()를 호출한다.
 
-[Java Servlet Architecture](/assets/img/servlet-lifecycle.jpg)
+![Java Servlet Architecture](/assets/img/servlet-lifecycle.jpg)
 
 1. 서버로 오는 HTTP request는 Servlet Container에게 위임된다.
 2. Servlet container는 servlet을 인스턴스화 하고 service()를 호출한다.
@@ -82,7 +82,7 @@ Servlet을 implement하는 클래스를 직접 구현할 수도 있지만, 보�
   - servlet은 컨테이너의 address space 안에 머물며 다른 HTTP 요청을 처리할 수 있다.
 5. Web Server가 HTTP response를 요청자에게 보낸다.
 
-[Overall Architecture](/assets/img/servlet-container-life-cycle)
+![Overall Architecture](/assets/img/servlet-container-life-cycle)
 
 
 
