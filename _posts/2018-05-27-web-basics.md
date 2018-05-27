@@ -5,11 +5,11 @@ category: Web
 tags: Web-Server, Web-Container, Servlet, HTTP
 ---
 
-## 클라이언트와 호스트 간의 통신은 어떻게 이루어지는가?
+
 
 최근에 스프링부트를 배우면서 클라이언트와 호스트 간의 통신이 어떻게 이루어지는지에 대한 지식이 부족한 걸 느꼈다. 기본부터 다지는 게 좋겠다는 생각에 두루뭉실하게 알고 있던 단어를 정의해보고 너무 추상적으로만 다가왔던 웹 상에서의 통신의 흐름을 정리해보았다.
 
-> HTTP Network Basics
+### HTTP Network Basics
 
 HTTP는 네트워크 상에 서로 통신할 수 있는 기기 간에 약속된 통신 규약이다.
   - HTTP request/response를 미리 약속된 방식으로 전송해야만 서로를 '이해'할 수 있다.
@@ -30,16 +30,16 @@ TCP/IP
   - 다른 기기에 보내지는 데이터는 IP에 의해 작은 페킷으로 나뉘어서 보내진다.
   - HTTP request/response를 한 기기가 다른 기기에게 보내면 HTTP에 약속된 형식으로 작성이 되고 TCP/IP에 의거해 통신에 기본적으로 필요한 헤더가 추가적으로 붙게된다. 예를 들면 상대 기기를 찾아가기 위해 필요한 ip address와 보내는 데이터의 무결성을 확인하기 위해 필요한 packet '일련번호' 같은 것이 있다.
 
-**HTTP(Hyper Text Transmission Protocol)은 그저 통신 규약(Protocol)임을 명심하자.**
+> **HTTP(Hyper Text Transmission Protocol)은 그저 통신 규약(Protocol)임을 명심하자.**
 
-> Web Server?
+### Web Server?
 
 웹서버란 HTTP에 따라 클라이언트로부터 요청을 받고 데이터를 보내는(응답)하는 프로그램일 뿐이다. HTML이나 이미지 등을 HTTP 규격에 맞게 request를 작성해서 보내는 역할을 한다.
 
 ![Web Server](/assets/img/web-server.jpg)
 
 
-> Servlet Container? (aka Web Container)
+### Servlet Container? (aka Web Container)
 
 Web Container란 Web Server의 한 부분으로서, 서블릿의 인스턴스를 생성하여 lifecycle을 관리하며, HTTP 요청이 들어오면 servlet 객체의 service()를 호출한다.
 
@@ -51,9 +51,13 @@ Web Container란 Web Server의 한 부분으로서, 서블릿의 인스턴스를
   - 각 쓰레드는 하나의 servlet 인스턴스의 service() 메소드를 호출한다.
 
 
-> Servlet?
+### Servlet?
 
-**Java Servlet은 JavaEE javax.servlet 패키지 안에 정의되어있는 인터페이스이다.** 이 인터페이스를 구현하는 클래스의 인스턴스를 servlet이라고 부른다. Servlet 구현체는 세 가지의 메소드를 구현해야 한다:
+Java Servlet은 JavaEE javax.servlet 패키지 안에 정의되어있는 인터페이스이다.
+ 
+
+이 인터페이스를 구현하는 클래스의 인스턴스를 servlet이라고 부른다. Servlet 구현체는 세 가지의 메소드를 구현해야 한다:
+
 1. init()
   - servlet이 만들어지면 (ie. 인스턴스화되면), init() 메소드가 호출된다.
   - life cycle 동안 사용될 데이터를 로딩한다.
@@ -67,7 +71,7 @@ Web Container란 Web Server의 한 부분으로서, 서블릿의 인스턴스를
 
 생성된 servlet은 들어오는 HTTP 요청을 받아서 어떻게 할지를 *동적으로* 결정할 수 있고 CGI와는 달리 요청이 들어올 때마다 새로운 프로세스를 생성하지 않기 때문에 서버의 효율을 높였다. 또한 자바 클래스이기 때문에 모든 자바 클래스 라이브러리를 사용할 수 있다.
 
-**요약하자면, servlet의 역할은 요청을 받아서 해석하고, 해석된 데이터에 따라 적당한 리소스를 동적으로 선택해서 보내는 것이다.**
+> **요약하자면, servlet의 역할은 요청을 받아서 해석하고, 해석된 데이터에 따라 적당한 리소스를 동적으로 선택해서 보내는 것이다.**
 
 Servlet을 implement하는 클래스를 직접 구현할 수도 있지만, 보통 Apache Tomcat과 같은 웹서버가 제공하는 구현체를 쓴다.
 
@@ -88,5 +92,6 @@ Servlet을 implement하는 클래스를 직접 구현할 수도 있지만, 보�
 
 
 참고 문서들 - References:
+
 - https://dzone.com/articles/what-servlet-container
 - https://www.tutorialspoint.com/servlets/servlets-life-cycle.htm
