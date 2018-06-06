@@ -53,4 +53,4 @@ note:
 - View
   - 클라이언트에게 response로 보내지게 될 객체.
 
-[!Spring Architecutre](/assets/img/springmvcstructure.jpg)
+![Spring Architecutre](/assets/img/springmvcstructure.jpg)
