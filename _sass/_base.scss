@@ -94,7 +94,7 @@ h6 {
  */
 
 a {
-    color: #499DFE;
+    color: #000000;
     text-decoration: none;
     transition: border .5s;
 }
@@ -107,7 +107,7 @@ a:hover {
 .post-content h2:before {
     content: "¶ ";
     margin-right: 20px;
-    color: #499DFE;
+    color: #000000;
 }
 
 .link {
@@ -115,7 +115,7 @@ a:hover {
     padding-bottom: 2px;
     padding-left: 6px;
     padding-right: 6px;
-    color: #499DFE;
+    color: #000000;
     text-decoration: none;
     transition: background-color .7s;
 }
