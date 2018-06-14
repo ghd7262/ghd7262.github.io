@@ -1,3 +1,10 @@
+---
+layout: post
+title: JPA Study Part 1
+category: java
+tags: ORM JPA
+---
+
 
 ## ORM?
 ORM이란 Object Relational Mapping의 약어로, 객체 지향 언어인 자바로 어플리케이션을 개발하는데, 객체 지향 기반이 아닌 데이터베이스(대부분 관계형)를 사용할 때 생기는 문제점들을 해결하기 위해 만들어진 개념. 패러다임의 불일치를 해결, 즉 객체와 관계형 데이터를 맵핑해주는 역할을 개발자 가 직접 맵핑하는 것에서 ORM 프레임워크가 해주도록 함.
