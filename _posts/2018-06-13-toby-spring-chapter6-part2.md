@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 토비의 스프링 Chapter 6 - Part 2
-category: TIL
+category: java
 tags: Proxy Reflection Dynamic-Proxy
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 토비의 스프링 Chapter 6 - Part 1
-category: TIL
+category: java
 tags: AOP
 ---
 
