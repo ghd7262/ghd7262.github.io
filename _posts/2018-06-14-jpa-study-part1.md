@@ -71,4 +71,4 @@ jpa.remove(member);
 >**추상화를 통해 자바 코드로 커넥션 설정, 쿼리 작성과 결과 객체화의 수고를 코드 한줄로 다 해준다.**
 
 
-***To be continued... feat. Persistance Context & Transaction***
+***To be continued... feat. Persistence Context & Transaction***
