@@ -31,7 +31,7 @@ exclude:
 
 google-analytics: # add it if you have one
 
-skillstree: false # turn on or off the skills tree in about page
+skillstree: true # turn on or off the skills tree in about page
 
 # Build settings
 permalink: none
