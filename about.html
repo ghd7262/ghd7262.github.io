@@ -17,6 +17,10 @@ permalink: /about/
 <p>Machine Learning Techniques: Logistic/Linear Regression, Random Forest, K-Means, SVM, KNN</p>
 <p>Python Libraries: Pandas, Scikit-Learn, Numpy, Matplotlib, Seaborn, Plotly, Scipy, Wordcloud</p>
 
+  {% if site.skillstree %}
+	{% include skillstree.html %}
+	{% endif %}
+
 <h2>Education</h2>
 <p>University of California, San Diego 19': Mathematics, Probability and Statistics</p>
 <p>Relevant Coursework:</p>
@@ -44,7 +48,3 @@ permalink: /about/
 			<i class="fa fa-envelope"></i><a href="mailto:{{ site.email }}?subject=Hello&nbsp;{{ site.name }}"> Email</a>
 		</li>
 	</ul></p>
-
-	{% if site.skillstree %}
-	{% include skillstree.html %}
-	{% endif %}
