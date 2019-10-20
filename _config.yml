@@ -1,13 +1,13 @@
 # Site settings
-title: 재팍의 개발 블로그
-name: Jaehyun Park # your name
-email: jaeepark@gmail.com # your email address
+title: Dukki Hong
+name: Dukki Hong # your name
+email: ghd7262@gmail.com # your email address
 description: >
-     자바 백앤드 개발을 공부하면서 배운점과 여러 생각을 기록하는 블로그 입니다.
+     Data Enthusiast.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: # your Twitter username
-github_username: krapeaj # your Github username
+github_username: ghd7262 # your Github username
 disqus_username: # your disqus username
 
 plugins:
