@@ -6,7 +6,7 @@ description: >
      Data Enthusiast.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: # your Twitter username
+linkedin_username: okiedukki # your LinkedIn username
 github_username: ghd7262 # your Github username
 disqus_username: # your disqus username
 
